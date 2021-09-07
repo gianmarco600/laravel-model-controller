@@ -16,36 +16,20 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/','HomeController@index')->name('homepage');
 
-Route::get('/characters', function () {
-    return view('characters');
-})->name('characters');
+Route::get('/characters','HomeController@characters')->name('characters');
 
 Route::get('/comic/{id}','ComicController@comic')->name('comic');
 
-Route::get('/comics', function () {
-    return view('comics');
-})->name('comics');
+Route::get('/comics','HomeController@comics')->name('comics');
 
-Route::get('/movies', function () {
-    return view('movies');
-})->name('movies');
+Route::get('/movies','HomeController@movies')->name('movies');
 
-Route::get('/tv', function () {
-    return view('tv');
-})->name('tv');
+Route::get('/tv','HomeController@tv')->name('tv');
 
-Route::get('/games', function () {
-    return view('games');
-})->name('games');
+Route::get('/games','HomeController@games')->name('games');
 
-Route::get('/videos', function () {
-    return view('videos');
-})->name('videos');
+Route::get('/videos','HomeController@videos')->name('videos');
 
-Route::get('/news', function () {
-    return view('news');
-})->name('news');
+Route::get('/news','HomeController@news')->name('news');
 
-Route::get('/shop', function () {
-    return view('shop');
-})->name('shop');
+Route::get('/shop','HomeController@news')->name('shop');

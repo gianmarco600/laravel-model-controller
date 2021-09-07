@@ -9,16 +9,16 @@
         <h4>current series</h4>
     </div>
     <div class="row wrap ">
-        @foreach ($comics as $key => $comic)
+        @foreach ($comics as  $comic)
             <div class="col-2 my-30 p-20">
-                <a href="{{route('comic')}}?key={{$key}}" class="card">
+                <a href="{{route('comic', ['id'=> $comic->id])}}" class="card">
                     
                     
-                    <div class="bgimg">
-                        <div class="bgfx"></div>
-                        <img src="{{$comic['thumb']}}" alt="">
-                    </div>
-                    <div class="etichetta">{{$comic['title']}}</div>
+                    
+                    
+                    <img src="{{ $comic->thumb }}" alt="">
+                    
+                    <div class="etichetta">{{$comic->title}}</div>
                 </a>
                 
             </div>
