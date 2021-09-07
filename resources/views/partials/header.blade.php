@@ -9,7 +9,7 @@
             <nav>
                 <ul>
                     <li><a href="{{route('characters')}}">Characters</a><div class="anim"></div></li>
-                    <li><a href="{{route('comics')}}?key=''">Comics</a><div class="anim"></div></li>
+                    <li><a href="{{route('comics')}}">Comics</a><div class="anim"></div></li>
                     <li><a href="{{route('movies')}}">Movies</a><div class="anim"></div></li>
                     <li><a href="{{route('tv')}}">TV</a><div class="anim"></div></li>
                     <li><a href="{{route('games')}}">Games</a><div class="anim"></div></li>
